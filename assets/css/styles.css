@@ -1,17 +1,21 @@
 /*==================== GOOGLE FONTS ====================*/
+/* Primeiro importar a fonte pelo google fonts, fonte Poppins wght@400;500;600&display=swap*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+
 /*==================== VARIABLES CSS ====================*/
+/* Depois de importar a fonte colocar a altura do header*/
 :root {
     --header-height: 3rem;
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    /* Depois de colocar a altura do header fazer a seleção e cores*/
+    --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color: hsl(var(--hue-color), 95%, 27%);
+    --first-color-second: hsl(var(--hue-color), 95%, 27%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -24,6 +28,7 @@
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
     /*========== Font and typography ==========*/
+    /*Depois de fazer a seleção de cores, colocar qual fonte quer ser usada e dimensionar ela*/
     --body-font: 'Poppins', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -36,10 +41,12 @@
     --smaller-font-size: .75rem;
 
     /*========== Font weight ==========*/
+    /* colocar a largura da fonte depois de dimensionar*/
     --font-medium: 500;
     --font-semi-bold: 600;
 
     /*========== Margenes Bottom ==========*/
+    /* colocar as margens de baixo depois de colocar a largura*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -51,12 +58,14 @@
     --mb-3: 3rem;
 
     /*========== z index ==========*/
+    /* depois de colocar as margens tipar o z index para posição dos elementos*/
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
 }
 
 /* Font size for large devices */
+/* depois de tipar o z index colocar o tamanho da fonte para dispositivos maiores*/
 @media screen and (min-width: 968px) {
     :root {
         --big-font-size: 3rem;
@@ -76,6 +85,7 @@
 
 
 /*==================== BASE ====================*/
+/* depois de colocar a fonte para dispositivos maiores, vamos implementar o css da base do projeto*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -113,6 +123,7 @@ img {
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
+/* depois de criar a base do css do projeto vou fazer as classes reutilizaveis do css*/
 .section {
   padding: 2rem 0 4rem;
 }
@@ -134,6 +145,7 @@ img {
 }
 
 /*==================== LAYOUT ====================*/
+/* depois de fazer as classes reutilizaveis fazer as classes do layout*/
 .container {
   max-width: 768px;
   margin-left: var(--mb-1-5);
