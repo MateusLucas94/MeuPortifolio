@@ -36,6 +36,23 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*====================== HABILIDADES DE ACORDEÃO ====================*/
+const skillsContent = document.getElementesByClassName('skills-content'),
+      skillsHeader = document.querySelectorAll('.skills-header')
+
+function toggleSkills(){
+    let itemClass = this.parentNode.className
+
+    for(i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = 'skills__content skills__close'
+    }
+    if(itemClass === 'skill-content skills__close'){
+        this.parentNode.className = 'skill-content skills_open'
+    }
+}
+
+skillsHeader.forEach((el) =>{
+    el.addEventListener('click', toggleSkills)
+})
 
 
 /*====================== GUIAS DE QUALIFICAÇÃO ====================*/
